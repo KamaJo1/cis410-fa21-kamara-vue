@@ -1,16 +1,22 @@
 <template>
-  <my-header/>
+  <my-header />
+  <dir class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-7"></div>
+      <router-view />
+    </div>
+  </dir>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     "my-header": Header,
-  }
-}
+  },
+};
 </script>
 
 <style>
