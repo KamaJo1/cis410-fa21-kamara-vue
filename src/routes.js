@@ -14,8 +14,8 @@ const router = createRouter({
     routes: [{path: "/", component: Home},
             {path: '/account', component: Account},
             {path: "/login", component: Login},
-            {path: "/work", component: Work},
-            {path: "/work/:pk",component: WorkDetail,
+            {path: "/Work", component: Work},
+            {path: "/Work/:pk",component: WorkDetail,
                  children: [{path: "review",component: ReviewCreate}]}, 
             {path:"/signup", component: Signup},
             {path: "/:Invalidroute(.*)", component: NotFound}
