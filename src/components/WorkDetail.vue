@@ -14,9 +14,10 @@
   </div>
 <br/>
 
-<router-link v-if="auth" :to="`/work/${this.$route.params.pk}/review`"> <button class="btn btn-sucess"> Add a Review </button ></router-link>
-<router-link v-else :to="`/login`"> <button class="btn btn-outline-sucess"> Sign in to add a Review </button ></router-link>
+<router-link v-if="auth" :to="`/work/${this.$route.params.pk}/review`"> <button class="btn btn-success"> Add a Review </button ></router-link>
+<router-link v-else :to="`/login`"> <button class="btn btn-outline-success"> Sign in to add a Review </button ></router-link>
 
+<router-view />
 
   </div>
 </template>
